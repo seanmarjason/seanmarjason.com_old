@@ -22,7 +22,9 @@ h2 {
 
 h3 {
   text-align: center;
-  margin: 5vh 0 2.5vh 0;
+  margin: 0;
+  width: 100%;
+  padding: 10px 0 10px 0;
 }
 
 #cursor {
@@ -159,6 +161,45 @@ hr {
 }
 
 .container_pg2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+#AboutMeImgContainer {
+  width: 80vw;
+  max-width: 500px;
+}
+
+#AboutMeContainer {
+  font-size: 14px;
+  font-size: 1.7vh;
+  width: 80vw;
+  max-width: 500px;
+  padding: 10px;
+  text-align: center;
+}
+
+#AboutMeTitle {
+  width: 100%;
+}
+
+#AboutMeImg {
+  height: 40vw;
+  width: 40vw;
+  max-height: 300px;
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 25px;
+}
+
+.container_pg3 {
   display: flex;
   flex-direction: column;
   height: 100vh;
