@@ -20,6 +20,11 @@ h2 {
   font-weight: lighter;
 }
 
+h3 {
+  text-align: center;
+  margin: 5vh 0 2.5vh 0;
+}
+
 #cursor {
   font-weight: 100;
   font-size: 2.5vw;
@@ -111,8 +116,9 @@ hr {
 
 .navtip {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .arrow {
@@ -158,23 +164,52 @@ hr {
   height: 100vh;
 }
 
-.projects {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
 .project {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 300px;
-  height: 300px;
-  margin: 20px;
+  width: 75vw;
+  height: 75vw;
+  max-width: 600px;
+  max-height: 400px;
   background-color: #191919;
-  box-shadow: 2px 5px 5px #070707;
 }
+
+.carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.previous, .next {
+  cursor: pointer;
+  width: auto;
+  padding: 10px;
+}
+
+.previous:hover, .next:hover {
+  background-color: rgba(25, 25, 25, 0.9);
+}
+
+.carouselDots {
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 3px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
 
 .project_title {
   background-color: transparent;
@@ -215,7 +250,6 @@ hr {
 #moreProjects {
   background-color: #191919;
   color: #ffffff;
-  font-weight: lighter;
   font-size: 16px;
 }
 
@@ -243,4 +277,9 @@ hr {
   50% {
     color: #ffffff;
   }
+}
+
+/* Slide Animation */
+.slide {
+  /* TBC */
 }

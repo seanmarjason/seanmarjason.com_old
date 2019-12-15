@@ -40,23 +40,34 @@
     </div>
   </div>
   <div class="container_pg2">
-    <div class="projects">
-      <div class="project" id="project_1">
-        <h3 class="project_title">What should I be learning?</h3>
+    <h3>My Latest Projects</h3>
+    <div class="carousel">
+      <a class="previous" id="previous" onclick="plusSlides(-1)">&#10094;</a>
+      <div class="projects">
+        <div class="project" id="project_1">
+          <h4 class="project_title">What should I be learning?</h4>
+        </div>
+        <div class="project" id="project_2">
+          <h4 class="project_title">Global Temperature Data</h4>
+        </div>
+        <div class="project" id="project_3">
+          <h4 class="project_title">Chat, the future of UI?</h4>
+        </div>
+        <div class="project" id="projectMore">
+          <h4 id="moreProjects">More Projects</h4>
+        </div>
       </div>
-      <div class="project" id="project_2">
-        <h3 class="project_title">Global Temperature Data</h3>
-      </div>
-      <div class="project" id="project_3">
-        <h3 class="project_title">Chat, the future of UI?</h3>
-      </div>
-      <div class="project" id="projectMore">
-        <h3 id="moreProjects">More Projects</h3>
-      </div>
+      <a class="next" id="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <!-- <div class="navtip">
+    <div class="carouselDots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <div class="navtip">
       <div class="arrow"></div>
-    </div> -->
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
