@@ -46,6 +46,29 @@ hr {
   height: 100vh;
 }
 
+.container_pg2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.container_pg3 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container_pg4 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -160,15 +183,7 @@ hr {
   transform-origin: top right;
 }
 
-.container_pg2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  height: 100vh;
-  align-items: flex-start;
-  align-content: flex-start;
-}
+
 
 #AboutMeImgContainer {
   width: 80vw;
@@ -199,11 +214,7 @@ hr {
   padding-top: 25px;
 }
 
-.container_pg3 {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
+
 
 .project {
   display: flex;
