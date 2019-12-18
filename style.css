@@ -29,9 +29,10 @@ h3 {
   text-align: center;
   margin: 0;
   width: 100%;
-  padding: 10px 0 10px 0;
+  padding: 20px 0 20px 0;
   text-transform: uppercase;
   letter-spacing: 0.25em;
+  font-weight: lighter;
 }
 
 #cursor {
@@ -51,7 +52,12 @@ hr {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: #070707;
+  /* background-color: #070707; */
+  background: #000000 url(/resources/images/_DSC1136_2.png);
+  background-position: top;
+  background-size: 70vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #ffffff;
   margin: 0;
 }
@@ -104,7 +110,8 @@ hr {
   justify-content: space-between;
   align-items: center;
   height: 50px;
-  background-color: #070707;
+  /* background-color: rgba(7, 7, 7, 0.95); */
+  background-color: #000000;
   color: #ffffff;
   position: fixed;
   top: 0;
