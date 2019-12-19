@@ -3,11 +3,6 @@ body {
   margin: 0;
 }
 
-/* .pageContainer {
-  background: rgb(47,47,47);
-  background: radial-gradient(circle, rgba(47,47,47,1) 0%, rgba(7,7,7,1) 95%);
-} */
-
 h1 {
   font-family: 'Electrolize', sans-serif;
   font-size: calc(22px + 2vw);
@@ -53,12 +48,12 @@ hr {
   flex-direction: column;
   height: 100vh;
   /* background-color: #070707; */
-  background: #000000 url(/resources/images/DSC1136_2.png);
+  background: #000000 url(/resources/images/DSC1136.png);
   background-position: top;
-  background-size: 70vh;
+  background-size: 120vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: #ffffff;
+  color: #c8c8c8;
   margin: 0;
 }
 
