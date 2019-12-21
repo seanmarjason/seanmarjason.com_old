@@ -1,14 +1,13 @@
 
-// Hamburger Menu Animations
-function displayMenu(x) {
-  x.classList.toggle("change");
+// Menu Show-Hide
+function toggleMenu() {
+  var menu = document.getElementById("burgerMenu")
+  var hamburger = document.getElementById("burger");
+  menu.classList.toggle("burgerMenuShow");
+  hamburger.classList.toggle("change");
 }
 
 // Carousel
-
-// document.getElementById("previous").addEventListener("click", plusSlides(-1));
-// document.getElementById("next"),addEventListener("click", plusSlides(1));
-
 var slideIndex = 1;
 showSlides(slideIndex);
 

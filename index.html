@@ -10,24 +10,30 @@
 </head>
 <body>
   <div class="navbar">
-    <div class="navSocials">
+    <div id="navSocials">
         <a href="mailto:smarjason@outlook.com"><img class="contactIcon" alt="smarjason@outlook.com" src="/resources/images/iconmonstr-email-1-240.png"></a>
         <a href="https://www.linkedin.com/in/seanmarjason/"><img class="contactIcon" alt="linkedIn Sean Marjason" src="/resources/images/iconmonstr-linkedin-3-240.png"></a>
         <a href="https://github.com/seanmarjason"><img class="contactIcon" alt="GitHub Sean Marjason" src="/resources/images/iconmonstr-github-1-240.png"></a>
     </div>
-    <div class="menu">
+    <div id="menu" class="menu">
         <a class="navlink" href="#">Home</a>
-        <a class="navlink" href="#">Projects</a>
-        <a class="navlink" href="#">About</a>
-        <a class="navlink" href="#">Contact</a>
+        <a class="navlink" href="#AboutMe">About</a>
+        <a class="navlink" href="#Projects">Projects</a>
+        <a class="navlink" href="#Contact">Contact</a>
     </div>
-    <div class="burger" onclick="displayMenu(this)">
+    <div id="burger" onclick="toggleMenu()">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
     </div>
+    <div id="burgerMenu" class="burgerMenu">
+      <a class="burgerlink" href="#" onclick="toggleMenu()">Home</a>
+      <a class="burgerlink" href="#AboutMe" onclick="toggleMenu()">About</a>
+      <a class="burgerlink" href="#Projects" onclick="toggleMenu()">Projects</a>
+      <a class="burgerlink" href="#Contact" onclick="toggleMenu()">Contact</a>
   </div>
-  <div class="container_pg1">
+  </div>
+  <div class="container container_pg1">
     <div class="jumbotron">
       <h1>SEAN MARJASON</h1>
       <h2>Analyst  |  Technologist  |  Developer in Training<span id="cursor">&#x258c</span></h2>
@@ -36,8 +42,8 @@
       <div class="arrow"></div>
     </div>
   </div>
-  <div class="container_pg2">
-      <h3>About Me</h3>
+  <div class="container container_pg2">
+      <h3 id="AboutMe">About Me</h3>
       <div id="AboutMeImgContainer">
         <img id="AboutMeImg" src="/resources/images/SeanPortraitBorder4.png" alt="Sean Marjason Portrait">
       </div>
@@ -50,7 +56,7 @@
         <p><strong>That is my focus. That is my passion.</strong></p>
       </div>
   </div>  
-  <div class="container_pg3">
+  <div class="container container_pg3">
       <div id="MySkills">
           <div class="skill">
             <img src="/resources/images/iconmonstr-loop-thin.svg" alt="Process">
@@ -66,8 +72,8 @@
           </div>
       </div>
   </div>
-  <div class="container_pg4">
-    <h3>Latest Projects</h3>
+  <div class="container container_pg4">
+    <h3 id="Projects">Latest Projects</h3>
     <div class="carousel">
       <a class="previous" id="previous" onclick="plusSlides(-1)"><</a>
       <div class="projects">
@@ -97,8 +103,8 @@
       <div class="arrow"></div>
     </div>
   </div>
-  <div class="container_pg5">
-    <h3>Contact</h3>
+  <div class="container container_pg5">
+    <h3 id="Contact">Contact</h3>
     <div class="contactMe">
         <a href="mailto:smarjason@outlook.com"><img class="contactIcon" alt="smarjason@outlook.com" src="/resources/images/iconmonstr-email-1-240.png"></a>
         <a href="https://www.linkedin.com/in/seanmarjason/"><img class="contactIcon" alt="linkedIn Sean Marjason" src="/resources/images/iconmonstr-linkedin-3-240.png"></a>
