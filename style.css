@@ -42,12 +42,6 @@ h3 {
   animation: 1s blink step-end infinite;
 }
 
-hr {
-  border-color: #2e2e2e;
-  padding: 0;
-  margin: 0;
-}
-
 .container_pg1 {
   display: flex;
   flex-direction: column;
@@ -70,7 +64,7 @@ hr {
   align-content: flex-start;
   background-color: #ffffff;
   color: #070707;
-  margin-top: 50px;
+  padding-bottom: 60px;
 }
 
 .container_pg3 {
@@ -78,27 +72,24 @@ hr {
   flex-direction: column;
   background-color: #ffffff;
   color: #070707;
-  margin-top: 50px;
 }
 
 .container_pg4 {
   display: flex;
   flex-direction: column;
-  height: 50vh;
   background-color: #ffffff;
   color: #070707;
-  margin-top: 50px;
+  padding-bottom: 60px;
 }
 
 .container_pg5 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  height: 50vh;
   align-content: flex-start;
   background-color: #070707;
   color: #ffffff;
-  margin-top: 50px;
+  padding-bottom: 60px;
 }
 
 .navbar {
@@ -225,11 +216,6 @@ hr {
 
 .arrow {
   opacity: 0;
-  /* position: absolute; */
-  /* left: 50%;
-  right: 50%; */
-  /* transform-origin: 50% 50%; */
-  /* transform: translate3d(-50%, -50%, 0); */
   animation: fade 3s 0.5s ease-in-out infinite;
   display: flex;
   flex-direction: column;
@@ -267,11 +253,9 @@ hr {
 
 #AboutMeContainer {
   font-size: 14px;
-  /* font-size: 1.7vh; */
-  /* font-size: 1vw; */
   font-weight: lighter;
   width: 80vw;
-  max-width: 500px;
+  max-width: 600px;
   padding: 10px;
   text-align: justify;
 }
@@ -296,14 +280,18 @@ hr {
   display: flex; 
   justify-content: center;
   flex-wrap: wrap;
+
 }
 
 .skill {
+  display: flex;
+  flex-direction: column;
   width: 75vw;
   max-width: 300px;
   height: 30vh;
   text-align: center;
   align-items: center;
+  justify-content: center;
 }
 
 .skill>img {
@@ -313,6 +301,10 @@ hr {
 
 .skill>h4 {
   font-weight: lighter;
+}
+
+.skill:hover {
+  background-color: grey;
 }
 
 
@@ -417,10 +409,25 @@ hr {
 }
 
 .contactMe {
-  width: 20vw;
-  max-width: 200px;
+  width: 80vw;
   padding: 10px;
   text-align: center;
+}
+
+#email {
+  width: 80vw;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#email a {
+  text-decoration: none;
+  color: #c8c8c8;
+  font-weight: lighter;
+}
+
+#email a:hover {
+  text-decoration: underline;
 }
 
 @keyframes fade {
