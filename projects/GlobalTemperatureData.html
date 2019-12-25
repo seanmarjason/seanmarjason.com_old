@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Global Temperatures, what does this data look like?</title>
+  <link rel="stylesheet" href="project.css">
+  <link href="https://fonts.googleapis.com/css?family=Electrolize|Open+Sans:300,400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="navbar">
+    <div id="navSocials">
+        <a href="mailto:smarjason@outlook.com"><img class="contactIcon" alt="smarjason@outlook.com" src="/resources/images/iconmonstr-email-1-240 black.png"></a>
+    </div>
+    <div class="logo">
+      <a href="../index.html"><img src="/resources/images/SMLogo_black.png" alt="SM Logo in Black"></a>
+    </div>
+    <div id="menu" class="menu">
+        <a class="navlink" href="../index.html">Home</a>
+        <a class="navlink" href="../index.html#AboutMe">About</a>
+        <a class="navlink" href="../index.html#Projects">Projects</a>
+        <a class="navlink" href="../index.html#Contact">Contact</a>
+    </div>
+    <div id="burger" onclick="toggleMenu()">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <div id="burgerMenu" class="burgerMenu">
+      <a class="burgerlink" href="../index.html" onclick="toggleMenu()">Home</a>
+      <a class="burgerlink" href="../index.html#AboutMe" onclick="toggleMenu()">About</a>
+      <a class="burgerlink" href="../index.html#Projects" onclick="toggleMenu()">Projects</a>
+      <a class="burgerlink" href="../index.html#Contact" onclick="toggleMenu()">Contact</a>
+    </div>
+  </div>
+  <div class="header">
+    <div class="headerImg">
+      <img src="002_GlobalTemperatureData/photo-1559738140-bc41e4e5d118(1).jpeg" alt="Climate Change Protest">
+    </div>
+    <div class="headerContent">
+      <h2 class="DataAnalysis">Data Analysis</h2>
+      <h1>Global Temperatures, what does this data look like?</h1>
+      <p id="date">23 June 2019</p>
+      <img id="AuthorImg" src="/resources/images/SeanPortraitBorder4.png" alt="Sean Marjason Portrait">  
+    </div>
+  </div>
+  <div class="postBody">
+    <p>Something I’ve really wanted to explore and work with is global temperatures. I want to understand exactly what is going on in this crazy world, and become equipped with real information rather than constantly listening to the polarising views and opinions on global warming. Naturally I’m in the ‘we need to do something about this’ camp, but what exactly do we need to do? Well, hopefully data can help me to find some concrete actions I can take.</p>
+    <p>The data set that I am planning to work with is actually a consolidation of various sources of Global Temperature data put together by Berkeley Earth, which has been repackaged by Kaggle for use across the data community (Thanks Kaggle!). The data set can be found here:</p>
+    <a href="https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data">https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data</a>
+    <p>Now, before I even get started working with this data, I guess I should at least understand what I’m working with? Time for some rough data exploration …</p>
+    <iframe id="iframe" src="002_GlobalTemperatureData/001_DataExploration.html" frameborder="0"></iframe>
+
+    <ul>
+      <p>So, what now? Well obviously this is a HUGE data set, so I need to be careful how I work with it.</p>
+      <p>I’d like to start experimenting with some visualisations to see how I can best describe this data and potentially build something to help with data exploration without needing to write any code.</p>
+      <p>I’d also eventually like to do some comparative analyses to understand the drivers of climate change.</p>
+      <p>I’d also be keen to do something on climate change and global snowfalls, to see if I can understand what impact climate change is going to have on all the ski resorts that I’d like to visit in the coming years (please don’t take away that fresh POW!)</p>  
+      <p>Some key things that I need to be aware of through all of this:</p>
+      <li>There is inconsistent data in the earlier date ranges of this data set that I need to account for. I should look into this in more detail if I want to use the full data set to ensure that no analyses are skewed due to inconsistent data. I could achieve this with clever aggregations, or I may need to find more elegant solutions.</li>
+      <li>Given temperature readings are being take in individual locations across various countries, any aggregations will cause me to lose precision in my analyses. For example, in a single country like the US there will be a wide range of readings covering the snowy mountains of the north as well as the harsh southern climates, and so any averaging of temperatures in the US (and similar countries) may lose this large variation in temperatures.</li>
+      <li>Any comparisons of this data set to others need to account for the location that other measures or readings are taken. For example, the snowfall measurements that I would love to compare to are likely to be taken in different locations to these temperature readings, and so I need to ensure I am aware of this whenever comparing data sets like this.</li>
+    </ul>
+  </div>
+  <div class="otherPosts">
+    <a href="ChatTheFutureOfUI.html" class="otherPostNav newerPost">
+      <img src="/resources/images/iconmonstr-arrow-76-240_left.png" alt="Left Arrow">
+      <p><strong>Next Post:</strong></p>
+      <p>Chat, the future of User Interfaces?</p>
+    </a>
+    <a href="WhatShouldIBeLearning.html" class="otherPostNav olderPost">
+      <img src="/resources/images/iconmonstr-arrow-75-240_right.png" alt="Right Arrow">
+      <p><strong>Previous Post:</strong></p>
+      <p>What should I be learning?</p>
+    </a>
+  </div>
+  <div class="container footer">
+    <div id="email">
+      <a href="mailto:smarjason@outlook.com">smarjason@outlook.com</a>
+    </div>
+    <div class="contactMe">
+        <a href="https://www.linkedin.com/in/seanmarjason/"><img class="contactIcon" alt="linkedIn Sean Marjason" src="/resources/images/iconmonstr-linkedin-3-240.png"></a>
+        <a href="https://github.com/seanmarjason"><img class="contactIcon" alt="GitHub Sean Marjason" src="/resources/images/iconmonstr-github-1-240.png"></a>
+        <a href="https://www.facebook.com/seanmarjason"><img class="contactIcon" alt="Facebook Sean Marjason" src="/resources/images/iconmonstr-facebook-6-240.png"></a>
+        <a href="https://www.instagram.com/seanmarjason/"><img class="contactIcon" alt="Instagram Sean Marjason" src="/resources/images/iconmonstr-instagram-11-240.png"></a>
+        <a href="https://twitter.com/seanmarjason"><img class="contactIcon" alt="Twitter Sean Marjason" src="/resources/images/iconmonstr-twitter-3-240.png"></a>
+        <a href="https://www.freecodecamp.org/seanmarjason"><img class="contactIcon" alt="FreeCodeCamp Sean Marjason" src="/resources/images/5847f91ccef1014c0b5e48b8(white).png"></a>
+        <a href="https://www.codewars.com/users/seanmarjason"><img class="contactIcon" alt="CodeWars Sean Marjason" src="/resources/images/codewars-512(white).png"></a>
+    </div>
+  </div>
+  <script src="project.js"></script>
+</body>
+</html>
