@@ -357,8 +357,6 @@ h3 {
   background-color: #717171;
 }
 
-
-
 .project_title {
   background-color: transparent;
   font-weight: lighter;
@@ -367,24 +365,24 @@ h3 {
   padding: 10px 10px 10px 10px;
 }
 
-#project_1 {
+#project_3 {
   background: 
     linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.9)), 
-    url("/projects/project3/WithComp.jpg");
+    url("/projects/003_ChatTheFutureOfUI/WithComp.jpg");
     background-size: cover;
 }
 
 #project_2 {
   background:
     linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.9)),
-    url("/projects/project2/photo-1559738140-bc41e4e5d118(1).jpeg");
+    url("/projects/002_GlobalTemperatureData/photo-1559738140-bc41e4e5d118(1).jpeg");
   background-size: cover;
 }
 
-#project_3 {
+#project_1 {
   background:
     linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.9)),
-    url("/projects/project1/claudia-587578-unsplash.jpg");
+    url("/projects/001_WhatShouldIBeLearning/claudia-587578-unsplash.jpg");
   background-size: cover;
 }
 
