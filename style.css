@@ -148,8 +148,12 @@ h3 {
   animation: 1s blink step-end infinite;
 }
 
-.container_pg1 {
+.container {
   display: flex;
+  margin: 50px 0;
+}
+
+#section1_Jumbotron {
   flex-direction: column;
   height: 100vh;
   background: #000000 url(/resources/images/DSC1136.png);
@@ -161,8 +165,7 @@ h3 {
   margin: 0;
 }
 
-.container_pg2 {
-  display: flex;
+#section2_AboutMe {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
@@ -173,29 +176,29 @@ h3 {
   padding-bottom: 60px;
 }
 
-.container_pg3 {
-  display: flex;
+#section3_MySkills {
   flex-direction: column;
   background-color: #ffffff;
   color: #070707;
+  align-items: center;
 }
 
-.container_pg4 {
-  display: flex;
+#section4_Projects {
   flex-direction: column;
   background-color: #ffffff;
   color: #070707;
-  padding-bottom: 60px;
+  width: 100vw;
+  margin: 50px 0 0 0;
 }
 
-.footer {
-  display: flex;
+#footer {
   justify-content: center;
   flex-wrap: wrap;
   align-content: flex-start;
   background-color: #070707;
   color: #ffffff;
   padding: 50px 0 60px 0;
+  margin: 0;
 }
 
 .jumbotron {
@@ -252,10 +255,10 @@ h3 {
 }
 
 #AboutMeContainer {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: lighter;
   width: 80vw;
-  max-width: 600px;
+  max-width: 900px;
   padding: 10px;
   text-align: justify;
 }
@@ -275,48 +278,59 @@ h3 {
   padding-top: 25px;
 }
 
-#MySkills {
-  width: 100%;
-  display: flex; 
-  justify-content: center;
-  flex-wrap: wrap;
-
+.carousel {
+  width: 80vw;
+  max-width: 1100px;
 }
 
 .skill {
   display: flex;
-  flex-direction: column;
-  width: 75vw;
-  max-width: 300px;
-  height: 30vh;
-  text-align: center;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  margin-bottom: 20px;
 }
 
-.skill>img {
+.skill * {
+  margin: auto;
+}
+
+.skillImg {
+  width: 100%;
+  text-align: center;
+}
+
+.skill img {
   width: 100px;
   height: 100px;
 }
 
-.skill>h4 {
+.skill h4 {
+  font-size: 20px;
+  margin: 20px auto;
+}
+
+.skill p {
+  width: 70vw;
   font-weight: lighter;
 }
 
-.skill:hover {
-  /* background-color: grey; */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* max-width: 1300px; */
 }
 
 .project {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 75vw;
+  width: 100vw;
   height: 75vw;
-  max-width: 600px;
-  max-height: 400px;
+  max-height: 500px;
   background-color: #191919;
   text-decoration: none;
+  margin: 0 5px 5px 5px;
 }
 
 .project_title {
@@ -462,4 +476,29 @@ h3 {
     display: flex;
   }
 
+
+  .skillImg {
+    width: 50%;
+    text-align: center;
+  }
+
+  .skill img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .skill p {
+    width: 50%;
+    font-weight: lighter;
+  }
+
+  .projects {
+    justify-content: space-around;
+  }
+
+  .project {
+    width: 33vw;
+    margin: auto;
+    margin-bottom: 5px;
+  }
 }

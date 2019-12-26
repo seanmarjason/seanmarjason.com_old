@@ -21,7 +21,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("project");
+  var slides = document.getElementsByClassName("skill");
   var dots = document.getElementsByClassName("dot");
   
   if (n > slides.length) {
@@ -40,3 +40,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "flex";
   dots[slideIndex-1].className += " active";
 }
+
+
+
+
