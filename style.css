@@ -232,7 +232,6 @@ h3 {
   content: '';
   display: block;
   height: 1.5px;
-  /* position: absolute; */
   top: 0;
   left: 0;
   width: 15px;
@@ -331,20 +330,8 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* max-width: 1300px; */
 }
-/* 
-.project {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  width: 100vw;
-  height: 75vw;
-  max-height: 500px;
-  background-color: #191919;
-  text-decoration: none;
-  margin: 0 5px 5px 5px;
-} */
+
 
 .project_title {
   background-color: transparent;
@@ -355,16 +342,6 @@ hr {
   color: #ffffff;
 }
 
-/* #project_3 {
-  background: 
-    linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.9)), 
-    url("/projects/003_ChatTheFutureOfUI/WithComp.jpg");
-    background-size: cover; 
-}
-*/
-
-
-/* TESTING NEW PROJECT TILES */
 .project {
   display: flex;
   position: relative;
@@ -547,7 +524,6 @@ hr {
   .skill p {
     width: 50%;
     font-weight: lighter;
-    /* margin: auto 20px; */
   }
 
   .projects {
