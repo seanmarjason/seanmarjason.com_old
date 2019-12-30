@@ -289,6 +289,9 @@ hr {
 .carousel {
   width: 80vw;
   max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .carouselNav {
@@ -301,8 +304,11 @@ hr {
   background-color: #c8c8c8;
 }
 
+.inactive {
+  display: none;
+}
+
 .skill {
-  display: flex;
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 20px;
@@ -333,6 +339,53 @@ hr {
   font-size: 16px;
   padding: 0 25px;
   text-align: center;
+}
+
+.carouselDots {
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #c8c8c8;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color: #717171;
+}
+
+#playPause {
+  width: 100%;
+  margin-top: 25px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.playPauseButton {
+  display: block;
+  margin: 0 auto;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+#playPause img {
+  width: 15px;
+  height: 15px;
+}
+
+.activeDot {
+  background-color: #717171;
 }
 
 .projects {
@@ -392,30 +445,6 @@ hr {
   opacity: 1;
 }
 
-.carousel {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.carouselDots {
-  text-align: center;
-}
-
-.dot {
-  cursor: pointer;
-  height: 3px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbbbbb;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
 .contactMe {
   width: 80vw;
   padding: 10px;
@@ -456,6 +485,7 @@ hr {
   }
 }
 
+
 @keyframes blink {
   0% {
     color: transparent;
@@ -464,6 +494,16 @@ hr {
   50% {
     color: #ffffff;
   }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slide-left {
+    0% { transform: translateX(100px); }
+  100% { transform: translateX(0px); }
 }
 
 @media only screen and (min-width: 900px) {
