@@ -87,3 +87,24 @@ previous.addEventListener('click', function () {pauseSlides(t)});
 next = document.getElementById("next");
 next.addEventListener('click', function () {changeSlide(1)});
 next.addEventListener('click', function () {pauseSlides(t)});
+
+document.addEventListener('keydown', function(event) {
+
+  // If keycode is ArrowLeft
+  if (event.keyCode === 37) {
+    changeSlide(-1);
+    pauseSlides(t);
+  }
+
+  // If keycode is ArrowRight
+  else if (event.keyCode === 39) {
+    changeSlide(1);
+    pauseSlides(t);
+  }
+
+  // If keycode is Space character
+  else if (event.keyCode === 32 && event.target === document.body) {
+    event.preventDefault();
+    playPauseSlides();
+  }
+});
