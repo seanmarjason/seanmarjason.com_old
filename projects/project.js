@@ -23,7 +23,6 @@ catch(err){}
 // Add shadow under navbar on scroll
 var navbar = document.getElementById('navbar');
 window.addEventListener('scroll', function () {
-  // console.log(window.scrollY);
   if (window.scrollY >= 25) {
     navbar.classList.add("navbarScrolled");
   }

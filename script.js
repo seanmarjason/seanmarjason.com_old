@@ -7,6 +7,24 @@ function toggleMenu() {
   hamburger.classList.toggle("change");
 }
 
+// NAVBAR INTERACTIONS
+var navbar = document.getElementById('navbar');
+var logo = document.getElementById('logo');
+var jumbotron = document.getElementById('jumbotron');
+window.addEventListener('scroll', function () {
+  if (window.scrollY >= 25) {
+    navbar.classList.add("navbarScrolled");
+    logo.classList.replace("invisible", "visible");
+    jumbotron.classList.replace("visible", "invisible");
+  }
+  else {
+    navbar.classList.remove("navbarScrolled");
+    logo.classList.replace("visible", "invisible");
+    jumbotron.classList.replace("invisible", "visible");
+  }
+})
+
+
 
 // CAROUSEL
 // Identify all slides

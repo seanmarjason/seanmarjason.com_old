@@ -7,7 +7,7 @@ body {
   margin: 0;
 }
 
-.navbar {
+#navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -21,6 +21,11 @@ body {
   z-index: 10;
 }
 
+.navbarScrolled {
+  box-shadow: 0 20px 30px -2px rgba(0,0,0,.2);
+  transition: box-shadow 1s;
+}
+
 #navSocials, #burger {
   margin: 0 10px 0 10px;
 }
@@ -30,6 +35,19 @@ body {
   width: 25px;
   padding: 5px;
   margin: auto;
+}
+
+#logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  /* animation: fadeIn 1s; */
+}
+
+#logo img {
+  height: 25px;
+  width: auto;
+  padding: 5px 0 5px 0;
 }
 
 .burgerMenu {
@@ -201,7 +219,7 @@ h3 {
   margin: 0;
 }
 
-.jumbotron {
+#jumbotron {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -312,7 +330,6 @@ hr {
   animation: slideLeft 0.75s, fadeIn 0.75s;
 }
 
-
 .skill {
   flex-wrap: wrap;
   align-items: center;
@@ -374,14 +391,6 @@ hr {
 .playPauseButton {
   display: block;
   margin: 0 auto;
-}
-
-.hide {
-  display: none;
-}
-
-.show {
-  display: block;
 }
 
 #playPause img {
@@ -474,6 +483,26 @@ hr {
 
 #email a:hover {
   text-decoration: underline;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 1s, opacity 0.5s ease-in-out;
+}
+
+.invisible {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 1s, opacity 0.5s ease-in-out;
 }
 
 @keyframes fade {
