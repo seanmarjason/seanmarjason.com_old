@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'PT Sans', 'Open Sans', sans-serif;
   margin: 0;
 }
 
@@ -31,9 +31,9 @@ body {
 }
 
 .contactIcon {
-  height: 25px;
-  width: 25px;
-  padding: 5px;
+  height: 30px;
+  width: 30px;
+  padding: 15px;
   margin: auto;
 }
 
@@ -68,7 +68,7 @@ body {
 .burgerlink {
   text-decoration: none;
   font-size: 20px;
-  color: #c8c8c8;
+  color: #ffffff;
   text-align: center;
   width: 100vw;
   padding: 5px;
@@ -91,7 +91,7 @@ body {
 .bar1, .bar2, .bar3 {
   width: 25px;
   height: 2px;
-  background-color: #c8c8c8;
+  background-color: #ffffff;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -123,21 +123,26 @@ body {
 
 .navlink {
   text-decoration: none;
-  color: #c8c8c8;
-  font-size: 14px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2.25px;
   width: auto;
-  padding: 0 20px;
+  padding: 0 40px;
   margin: 0;
+}
+
+.navlink:hover {
+  text-decoration: underline;
 }
 
 
 h1 {
-  font-family: 'Electrolize', sans-serif;
-  font-size: calc(22px + 2vw);
-  font-weight: lighter;
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(50px + 2vw);
   margin: 0;
   text-align: center;
-  letter-spacing: 0.2em;
+  letter-spacing: 12px;
 }
 
 h2 {
@@ -145,7 +150,7 @@ h2 {
   margin: 0;
   line-height: 100%;
   font-weight: lighter;
-  letter-spacing: 0.1em;
+  letter-spacing: 6px;
 }
 
 h3 {
@@ -175,11 +180,11 @@ h3 {
   flex-direction: column;
   height: 100vh;
   background: #000000 url(/resources/images/DSC1136.png);
-  background-position: top;
-  background-size: 120vh;
+  background-position: center 25px;
+  background-size: 110vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: #c8c8c8;
+  color: #ffffff;
   margin: 0;
 }
 
@@ -227,14 +232,57 @@ h3 {
   margin-top: 30vh;
 }
 
+#latestContentContainer {
+  width: 380px;
+  height: 60px;
+  margin-left: auto;
+  margin-top: 35vh;
+  color: #000000;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  border-radius: 5px 0 0 5px;
+}
+
+#latestContentContainer > p {
+  letter-spacing: 1.5px;
+  line-height: 1em;
+}
+
+#latestContentContainer span {
+  font-weight: 700;
+}
+
+#arrow {
+  padding: 5px;
+}
+
 .navtip {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navtip p {
+  margin: 10px;
+  animation: fade 3s 0.5s ease-in-out infinite;
 }
 
 .arrow {
+  /* position: absolute;
+  bottom: 5%; */
+  font-size: 20px;
+  animation:  fade 3s 0.5s ease-in-out infinite,
+              bounce 3s ease-in-out infinite;
+}
+
+/* .arrow {
   opacity: 0;
   animation: fade 3s 0.5s ease-in-out infinite;
   display: flex;
@@ -263,7 +311,7 @@ h3 {
 .arrow:after {
   transform: rotate(-45deg) translateX(23%);
   transform-origin: top right;
-}
+} */
 
 #AboutMeImgContainer {
   width: 80vw;
@@ -317,7 +365,7 @@ hr {
 }
 
 .carouselNav:hover {
-  background-color: #c8c8c8;
+  background-color: #ffffff;
 }
 
 .inactive {
@@ -476,7 +524,7 @@ hr {
 
 #email a {
   text-decoration: none;
-  color: #c8c8c8;
+  color: #ffffff;
   font-weight: lighter;
 }
 
@@ -505,28 +553,16 @@ hr {
 }
 
 @keyframes fade {
-  0% {
-    opacity: 0.15;
-  }
-
-  70% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0.15;
-  }
+  0%    {  opacity: 1; }
+  40%   {  opacity: 0.25; }
+  60%   {  opacity: 1; }
+  100%  {  opacity: 1; }
 }
 
 
 @keyframes blink {
-  0% {
-    color: transparent;
-  }
-
-  50% {
-    color: #ffffff;
-  }
+  0%    {  color: transparent; }
+  50%   {  color: #ffffff; }
 }
 
 @keyframes fadeIn {
@@ -535,9 +571,22 @@ hr {
 }
 
 @keyframes slideLeft {
-    0% { transform: translateX(100px); }
-  100% { transform: translateX(0px); }
+  0%    { transform: translateX(100px); }
+  100%  { transform: translateX(0px); }
 }
+
+@keyframes bounce {
+  0%    { transform: scale(1,1) translateY(0); }
+  30%   { transform: scale(1,1) translateY(-10px); }
+  60%   { transform: scale(1,1) translateY(-10px);}
+  67%   { transform: scale(1,1) translateY(0); }
+  70%   { transform: scale(1.1,0.9) translateY(0); }
+  80%   { transform: scale(0.9,1.1) translateY(-2px); }
+  /* 8%   { transform: scale(1,1) translateY(-2px); } */
+  85%   { transform: scale(1,1) translateY(0); }
+  100%  { transform: scale(1,1) translateY(0); }
+}
+
 
 @media only screen and (min-width: 900px) {
   #burger {
