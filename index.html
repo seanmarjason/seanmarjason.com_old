@@ -50,59 +50,61 @@
     </div>
   </div>
   <div class="container" id="section2_AboutMe">
-      <h3 id="AboutMe">About Me</h3>
+    <!-- <h3 id="AboutMe">About Me</h3> -->
+    <div class="box">
       <div id="AboutMeImgContainer">
-        <img id="AboutMeImg" src="/resources/images/SeanPortraitBorder4.png" alt="Sean Marjason Portrait">
+        <img id="AboutMeImg" src="/resources/images/_DSC1262-2(cropped).jpg" alt="Sean Marjason Portrait Image">
       </div>
       <div id="AboutMeContainer">
-        <p>Hi! I’m Sean Marjason – A Business Analyst & Technologist currently based in London, United Kingdom.</p>
-        <p>Adapting a quote from Transcendence (2014), <quote>“So many of us are eager to change the world, but I’ll just settle for understanding it first.”</quote></p>
-        <p>Change happens so quickly lately, I really don't know how we keep up! And if we can't keep up, how are we meant to get in front of the change and ensure we go in the "right" direction?</p>
-        <p>For me, it starts with information. The more informed we are, the more equipped we are with knowledge, information, data, the better we can engage and direct change.</p>
-        <p>My goal is to identify, capture, synthesise, and diseminate information, quickly and correctly. Maybe then we'll be just that little bit more equipped to handle what comes next in this crazy world...</p>
-        <p><strong>That is my focus. That is my passion.</strong></p>
-      </div>
-  </div>  
-  <div class="container" id="section3_MySkills">
-    <hr>
-      <div id="MySkills">
+        <div id="AboutMeHeader">
+          <p id="title"><strong>Hello World!</strong></p>
+          <p>My name is <strong>Sean Marjason </strong><span>&</span></p>
+          <p>I'm a <strong>Business Analyst </strong><span>&</span> <strong>Technologist</strong></p>
+          <p id="location">currently based in London, UK</p>
+        </div>
+        <div id="AboutMeQuote">
+          <blockquote cite="Trancendence, 2014">“So many of us are eager to change the world, but I’ll just settle for understanding it first.”</blockquote></p>
+          <p id="source">-Trancendence, 2014</p>
+        </div>
+        <div id="AboutMeBody">
+          <p>Change happens so quickly lately, I really don't know how we keep up! And if we can't keep up, how are we meant to get in front of the change and ensure we go in the "right" direction?</p>
+          <p>For me, it starts with information. The more informed we are, the more equipped we are with knowledge, information, data, the better we can engage and direct change.</p>
+          <p>My goal is to identify, capture, synthesise, and diseminate information, quickly and correctly. Maybe then we'll be just that little bit more equipped to handle what comes next in this crazy world...</p>
+          <p><strong>That is my focus. That is my passion.</strong></p>
+        </div>
+        <hr>
         <div class="carousel">
-          <a class="carouselNav previous" id="previous"><</a>
-          <div class="slide skill inactive">
-            <div class="skillImg">
-              <img src="/resources/images/iconmonstr-loop-thin.svg" alt="Process">
-              <h4>Business Analysis</h4>
+          <div id="carouselControls">
+            <div id="playPause">
+              <img id="play" src="/resources/images/iconmonstr-media-control-48-240_play.png" alt="Play" class="playPauseButton hide">
+              <img id="pause" src="/resources/images/iconmonstr-media-control-49-240_pause.png" alt="Pause" class="playPauseButton show">
             </div>
+            <a class="carouselNav previous" id="previous"><</a>
+            <div class="carouselDots">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <a class="carouselNav next" id="next">></a>
+          </div>
+          <div class="slide skill inactive">
+            <h4>Business Analysis</h4>
             <p>Understanding the inner workings of a business, where change is needed, and where technology can be used to create value. This is what I have been doing for most of my career. Without these skills, who knows what we would build, and how long it would take us to create quality software.</p>
           </div>
           <div class="slide skill inactive">
-          <div class="skillImg">
-            <img src="/resources/images/iconmonstr-bar-chart-thin.svg" alt="Chart">
             <h4>Data Analysis</h4>
-          </div>
             <p>What doesn't generate mass amounts of data in today's world? All of this data, analysed and interpreted in the right way, can help us to understand customers, improve operations, and automate pocesses. Data analysis has always been core to my BA work, to elicit, explore and confirm requirements. </p>
           </div>
           <div class="slide skill inactive">
-          <div class="skillImg">
-            <img src="/resources/images/iconmonstr-computer-thin.svg" alt="Screen">
             <h4>Front End Development</h4>
-          </div>
             <p>Web Development, the newest of my pursuits. My interest in development has come from years working with development teams, understanding the incredible tools and platforms they can create. I am currently building out my skills with HTML, CSS, and JS to be able to rapidly build and deploy custom websites.</p>
           </div>
-          <a class="carouselNav next" id="next">></a>
+        </div>
       </div>
-      <div class="carouselDots">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
       </div>
-      <div id="playPause">
-        <img id="play" src="/resources/images/iconmonstr-media-control-48-240_play.png" alt="Play" class="playPauseButton hide">
-        <img id="pause" src="/resources/images/iconmonstr-media-control-49-240_pause.png" alt="Pause" class="playPauseButton show">
-      </div>
-    </div>
-    <hr>
   </div>
+
+
   <div class="container" id="section4_Projects">
     <h3 id="Projects">Latest Projects</h3>
       <div class="projects">
