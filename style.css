@@ -7,6 +7,7 @@ html {
 body {
   font-family: 'PT Sans', 'Open Sans', sans-serif;
   margin: 0;
+  background-color: #000000;
 }
 
 #navbar {
@@ -21,6 +22,8 @@ body {
   top: 0;
   width: 100vw;
   z-index: 10;
+  animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: 0.5s;
 }
 
 .navbarScrolled {
@@ -144,6 +147,8 @@ h1 {
   margin: 0 20px;
   text-align: center;
   letter-spacing: 12px;
+  animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: 1s;
 }
 
 h2 {
@@ -153,6 +158,8 @@ h2 {
   line-height: 100%;
   font-weight: lighter;
   letter-spacing: 0.25vw;
+  animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: 1.5s;
 }
 
 h3 {
@@ -180,6 +187,8 @@ h3 {
   bottom: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation: fadeIn 1s both;
+  animation-delay: 2s;
 }
 
 .navtip p {
@@ -206,6 +215,8 @@ h3 {
   background-attachment: fixed;
   color: #ffffff;
   margin: 0;
+  animation: fadeIn 0.5s both;
+  animation-delay: 0.5s;
 }
 
 #cursor {
@@ -422,7 +433,7 @@ hr {
   background-color: #ffffff;
   color: #070707;
   width: 100vw;
-  margin: 5px 0 0 0;
+  padding: 5px 0 0 0;
 }
 
 .projects {
@@ -576,6 +587,18 @@ hr {
   80%   { transform: scale(0.9,1.1) translateY(-2px); }
   85%   { transform: scale(1,1) translateY(0); }
   100%  { transform: scale(1,1) translateY(0); }
+}
+
+/* @keyframes slideup {
+  0%    { transform: translateY(-100%); }
+  30%   { transform: translateY(-50%); }
+  50%   { transform: translateY(-10%); }
+  60%   { transform}
+} */
+
+@keyframes slide-in-top {
+  0%    { transform: translateY(-100%); opacity: 0; }
+  100%  { transform: translateY(0); opacity: 1; }
 }
 
 /* -------------------- MEDIA QUERIES -------------------- */
