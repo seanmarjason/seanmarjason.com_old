@@ -7,7 +7,7 @@ html {
 body {
   font-family: 'PT Sans', 'Open Sans', sans-serif;
   margin: 0;
-  background-color: #000000;
+  background-color: #0d0d0d;
 }
 
 #navbar {
@@ -16,7 +16,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 50px;
-  background-color: #000000;
+  background-color: #0d0d0d;
   color: #ffffff;
   position: fixed; 
   top: 0;
@@ -36,8 +36,8 @@ body {
 }
 
 .contactIcon {
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
   padding: 15px;
   margin: auto;
 }
@@ -49,7 +49,7 @@ body {
 }
 
 #logo img {
-  height: 25px;
+  height: 40px;
   width: auto;
   padding: 5px 0 5px 0;
 }
@@ -208,9 +208,9 @@ h3 {
 #section1_Jumbotron {
   flex-direction: column;
   height: 100vh;
-  background: #000000 url(/resources/images/DSC1136.jpg);
+  background: #000000 url(/resources/images/Background_Mockups1.png);
   background-position: center 25px;
-  background-size: 110vh;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #ffffff;
@@ -232,7 +232,7 @@ h3 {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: 30vh;
+  margin-top: 40vh;
 }
 
 #latestContentContainer {
@@ -497,10 +497,20 @@ hr {
   justify-content: center;
   flex-wrap: wrap;
   align-content: flex-start;
-  background-color: #070707;
+  background-color: #0d0d0d;
   color: #ffffff;
   padding: 50px 0 60px 0;
   margin: 0;
+}
+
+#footer > div {
+  width: 100%;
+  text-align: center;
+}
+
+#footerLogo {
+  height: 100px;
+  width: auto;
 }
 
 .contactMe {
