@@ -175,6 +175,29 @@ body {
   color: #3422d1;
 }
 
+.Development {
+  color: #1ba33d;
+}
+
+.postBody_keyImg {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+.postBody_keyImg:hover {
+  opacity: 0.75;
+}
+
+.postBody > a > p {
+  margin: 0;
+  text-align: center;
+  color: #777777;
+  font-size: 0.9rem;
+  font-style: italic;
+  max-width: 100%;
+}
+
 #date {
   font-size: 10px;
   color: #c8c8c8;

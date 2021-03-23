@@ -466,6 +466,7 @@ hr {
 .projectImg {
   width: 100vw;
   object-fit: cover;
+  object-position: 100% 50%;
 }
 
 .project_title {
@@ -646,6 +647,7 @@ hr {
     height: 100%;
     width: auto;
     object-fit: cover;
+    object-position: 100% 0;
   }
 
   .box {
