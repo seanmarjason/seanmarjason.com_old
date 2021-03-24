@@ -182,6 +182,7 @@ body {
 .postBody_keyImg {
   display: block;
   width: 90%;
+  max-width: 900px;
   margin: auto;
 }
 
